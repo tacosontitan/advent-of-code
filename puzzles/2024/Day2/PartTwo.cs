@@ -21,21 +21,7 @@ public sealed partial class DayTwo
         var safeReports = 0;
         foreach (var report in reports)
         {
-            var isReportSafe = RunReport(report);
-            if (!isReportSafe)
-            {
-                for (var levelToSkip = 0; levelToSkip < report.Length; levelToSkip++)
-                {
-                    var newReport = report.Where((_, index) => index != levelToSkip).ToArray();
-                    var isNewReportSafe = RunReport(newReport);
-                    if (isNewReportSafe)
-                    {
-                        isReportSafe = true;
-                        break;
-                    }
-                }
-            }
-
+            var isReportSafe = RunReportWithPersistence(report);
             if (isReportSafe)
                 safeReports++;
         }

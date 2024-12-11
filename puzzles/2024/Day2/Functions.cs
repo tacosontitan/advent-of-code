@@ -2,6 +2,23 @@ namespace Aoc24;
 
 public sealed partial class DayTwo
 {
+    private static bool RunReportWithPersistence(int[] report)
+    {
+        var isReportSafe = RunReport(report);
+        if (isReportSafe)
+            return true;
+
+        for (var levelToSkip = 0; levelToSkip < report.Length; levelToSkip++)
+        {
+            var newReport = report.Where((_, index) => index != levelToSkip).ToArray();
+            var isNewReportSafe = RunReport(newReport);
+            if (isNewReportSafe)
+                return true;
+        }
+
+        return false;
+    }
+
     private static bool RunReport(int[] report)
     {
         var isReportSafe = true;
