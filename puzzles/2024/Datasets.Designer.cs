@@ -174,6 +174,33 @@ namespace Aoc24 {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ]@;why()]&amp;where()@select()mul(589,854)${ &lt;-}$how()^#mul(517,928)^(%@#who()@&apos;mul(82,659):don&apos;t()mul(670,226)when(626,911)from()&amp;%{%where())-mul(244,869)&lt;]mul(582,125)&lt;mul(219,47):&apos;!mul(95,365)select(){how()how()select()mul(273,775)[$!],?)@mul(955,698)what()where()/;mul(79,369)&amp;?*$do()from()@mul(994,313)what()mul(603,3)&apos;~@]&apos;@@mul(729,217)#-/mul(561,454)!mul(588,577)^%&apos;{mul(705,583){*;+;mul(418,129)~@:^mul(449,366)@what()},-)):^*mul(842,848)%what()where():what()))&lt;from()/mul(775,104);&amp;mul(425,243)%//{what()who [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string DayThreeMemory {
+            get {
+                return ResourceManager.GetString("DayThreeMemory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to xmul(2,4)%&amp;mul[3,7]!@^do_not_mul(5,5)+mul(32,64]then(mul(11,8)mul(8,5)).
+        /// </summary>
+        internal static string DayThreePartOneExampleMemory {
+            get {
+                return ResourceManager.GetString("DayThreePartOneExampleMemory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to xmul(2,4)&amp;mul[3,7]!^don&apos;t()_mul(5,5)+mul(32,64](mul(11,8)undo()?mul(8,5)).
+        /// </summary>
+        internal static string DayThreePartTwoExampleMemory {
+            get {
+                return ResourceManager.GetString("DayThreePartTwoExampleMemory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 7 6 4 2 1
         ///1 2 7 8 9
         ///9 7 6 2 1
