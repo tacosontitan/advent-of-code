@@ -12,7 +12,7 @@ public sealed partial class DayTwo
     [Fact]
     public void PartTwo_Actual()
     {
-        const int expectedResult = 402;
+        const int expectedResult = 455;
         RunTest(expectedResult, Datasets.DayTwoReports, PartTwoDryRun);
     }
 
@@ -26,13 +26,7 @@ public sealed partial class DayTwo
             {
                 for (var levelToSkip = 0; levelToSkip < report.Length; levelToSkip++)
                 {
-                    var newReport = Enumerable
-                        .Range(0, report.Length)
-                        .Select(i => (index: i, level: report[i]))
-                        .Where(e => e.index != levelToSkip)
-                        .Select(e => e.level)
-                        .ToArray();
-
+                    var newReport = report.Where((_, index) => index != levelToSkip).ToArray();
                     var isNewReportSafe = RunReport(newReport);
                     if (isNewReportSafe)
                     {
