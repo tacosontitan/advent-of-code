@@ -21,18 +21,7 @@ public sealed partial class DayTwo
         var safeReports = 0;
         foreach (var report in reports)
         {
-            var isReportSafe = true;
-            for (var levelIndex = 2; levelIndex < report.Length; levelIndex++)
-            {
-                var previousLevel = report[levelIndex - 2];
-                var currentLevel = report[levelIndex - 1];
-                var nextLevel = report[levelIndex];
-
-                isReportSafe = AreLevelsSafe(currentLevel, previousLevel, nextLevel);
-                if (!isReportSafe)
-                    break;
-            }
-
+            var isReportSafe = RunReport(report);
             if (isReportSafe)
                 safeReports++;
         }

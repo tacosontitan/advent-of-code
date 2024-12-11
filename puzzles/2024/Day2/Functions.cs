@@ -2,6 +2,23 @@ namespace Aoc24;
 
 public sealed partial class DayTwo
 {
+    private static bool RunReport(int[] report)
+    {
+        var isReportSafe = true;
+        for (var levelIndex = 2; levelIndex < report.Length; levelIndex++)
+        {
+            var previousLevel = report[levelIndex - 2];
+            var currentLevel = report[levelIndex - 1];
+            var nextLevel = report[levelIndex];
+
+            isReportSafe = AreLevelsSafe(currentLevel, previousLevel, nextLevel);
+            if (!isReportSafe)
+                break;
+        }
+
+        return isReportSafe;
+    }
+
     private static bool AreLevelsSafe(
         int currentLevel,
         int previousLevel,
