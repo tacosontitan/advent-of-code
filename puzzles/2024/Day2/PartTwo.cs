@@ -21,23 +21,25 @@ public sealed partial class DayTwo
         var safeReports = 0;
         foreach (var report in reports)
         {
-            var isReportSafe = true;
-            for (var levelToSkip = 0; levelToSkip < report.Length; levelToSkip++)
+            var isReportSafe = RunReport(report);
+            if (!isReportSafe)
             {
-                var newReport = Enumerable.Range(0, report.Length).Select(i => (i, report[i])).Where(il => il.i != levelToSkip).ToArray();
-                for (var levelIndex = 2; levelIndex < newReport.Length; levelIndex++)
+                for (var levelToSkip = 0; levelToSkip < report.Length; levelToSkip++)
                 {
-                    var previousLevel = report[levelIndex - 2];
-                    var currentLevel = report[levelIndex - 1];
-                    var nextLevel = report[levelIndex];
+                    var newReport = Enumerable
+                        .Range(0, report.Length)
+                        .Select(i => (index: i, level: report[i]))
+                        .Where(e => e.index != levelToSkip)
+                        .Select(e => e.level)
+                        .ToArray();
 
-                    isReportSafe = AreLevelsSafe(currentLevel, previousLevel, nextLevel);
-                    if (!isReportSafe)
+                    var isNewReportSafe = RunReport(newReport);
+                    if (isNewReportSafe)
+                    {
+                        isReportSafe = true;
                         break;
+                    }
                 }
-
-                if (isReportSafe)
-                    break;
             }
 
             if (isReportSafe)
