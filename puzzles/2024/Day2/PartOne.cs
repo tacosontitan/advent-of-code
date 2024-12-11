@@ -21,48 +21,22 @@ public sealed partial class DayTwo
         var safeReports = 0;
         foreach (var report in reports)
         {
-            var nMinusOne = -1;
-            var nMinusTwo = -1;
             var isReportSafe = true;
-            foreach (var level in report)
+            for (var levelIndex = 2; levelIndex < report.Length; levelIndex++)
             {
-                if (nMinusOne == -1)
-                {
-                    nMinusOne = level;
-                    continue;
-                }
-                
-                var distanceFromPreviousLevel = Math.Abs(level - nMinusOne);
-                if (distanceFromPreviousLevel < 1
-                    || distanceFromPreviousLevel > 3)
-                {
-                    isReportSafe = false;
-                    break;
-                }
-                
-                if (nMinusTwo == -1)
-                {
-                    nMinusTwo = nMinusOne;
-                    nMinusOne = level;
-                    continue;
-                }
+                var previousLevel = report[levelIndex - 2];
+                var currentLevel = report[levelIndex - 1];
+                var nextLevel = report[levelIndex];
 
-                var isSequential = (level > nMinusOne && nMinusOne > nMinusTwo)
-                    || (level < nMinusOne && nMinusOne < nMinusTwo);
-
-                nMinusTwo = nMinusOne;
-                nMinusOne = level;
-                if (!isSequential)
-                {
-                    isReportSafe = false;
+                isReportSafe = AreLevelsSafe(currentLevel, previousLevel, nextLevel);
+                if (!isReportSafe)
                     break;
-                }
             }
-            
+
             if (isReportSafe)
                 safeReports++;
         }
-        
+
         return safeReports;
     }
 }
