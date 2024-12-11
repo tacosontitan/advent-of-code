@@ -6,7 +6,7 @@ public sealed partial class DayTwo
     public void PartOne_Example()
     {
         const int expectedResult = 2;
-        RunTest(expectedResult, Datasets.DayTwoPartOneExampleReports, PartOneDryRun);
+        RunTest(expectedResult, Datasets.DayTwoExampleReports, PartOneDryRun);
     }
 
     [Fact]

@@ -7,11 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Aoc24
-{
+namespace Aoc24 {
     using System;
-
-
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -22,52 +21,44 @@ namespace Aoc24
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Datasets
-    {
-
+    internal class Datasets {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Datasets()
-        {
+        internal Datasets() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if (object.ReferenceEquals(resourceMan, null))
-                {
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Aoc24.Datasets", typeof(Datasets).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to 47|53
         ///97|13
@@ -91,14 +82,12 @@ namespace Aoc24
         ///75|13
         ///53|13.
         /// </summary>
-        internal static string DayFivePartOneExampleOrderingRules
-        {
-            get
-            {
+        internal static string DayFivePartOneExampleOrderingRules {
+            get {
                 return ResourceManager.GetString("DayFivePartOneExampleOrderingRules", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to 75,47,61,53,29
         ///97,61,53,29,13
@@ -107,14 +96,12 @@ namespace Aoc24
         ///61,13,29
         ///97,13,75,29,47.
         /// </summary>
-        internal static string DayFivePartOneExamplePageNumbersPerUpdate
-        {
-            get
-            {
+        internal static string DayFivePartOneExamplePageNumbersPerUpdate {
+            get {
                 return ResourceManager.GetString("DayFivePartOneExamplePageNumbersPerUpdate", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to 35039   67568
         ///61770   80134
@@ -152,14 +139,12 @@ namespace Aoc24
         ///66083   58944
         ///81 [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string DayOneLists
-        {
-            get
-            {
+        internal static string DayOneLists {
+            get {
                 return ResourceManager.GetString("DayOneLists", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to 3   4
         ///4   3
@@ -168,14 +153,12 @@ namespace Aoc24
         ///3   9
         ///3   3.
         /// </summary>
-        internal static string DayOnePartOneExampleLists
-        {
-            get
-            {
+        internal static string DayOnePartOneExampleLists {
+            get {
                 return ResourceManager.GetString("DayOnePartOneExampleLists", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to 3   4
         ///4   3
@@ -184,14 +167,12 @@ namespace Aoc24
         ///3   9
         ///3   3.
         /// </summary>
-        internal static string DayOnePartTwoExampleLists
-        {
-            get
-            {
+        internal static string DayOnePartTwoExampleLists {
+            get {
                 return ResourceManager.GetString("DayOnePartTwoExampleLists", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to 7 6 4 2 1
         ///1 2 7 8 9
@@ -200,14 +181,12 @@ namespace Aoc24
         ///8 6 4 4 1
         ///1 3 6 7 9.
         /// </summary>
-        internal static string DayTwoPartOneExampleReports
-        {
-            get
-            {
-                return ResourceManager.GetString("DayTwoPartOneExampleReports", resourceCulture);
+        internal static string DayTwoExampleReports {
+            get {
+                return ResourceManager.GetString("DayTwoExampleReports", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to 58 59 62 63 64 63
         ///71 72 74 76 78 80 82 82
@@ -235,10 +214,8 @@ namespace Aoc24
         ///38 41 43 44 49 50 53 59
         ///2 [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string DayTwoReports
-        {
-            get
-            {
+        internal static string DayTwoReports {
+            get {
                 return ResourceManager.GetString("DayTwoReports", resourceCulture);
             }
         }
