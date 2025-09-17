@@ -1,9 +1,6 @@
 {
     "recommendations": [
-        "DavidAnson.vscode-markdownlint",
         "EditorConfig.EditorConfig",
-        "ms-dotnettools.csharp",
-        "kreativ-software.csharpextensions",
-        "streetsidesoftware.code-spell-checker"
+        "ms-dotnettools.csharp"
     ]
 }
