@@ -2,6 +2,8 @@
 
 This year, I am using C# scripts to solve each puzzle. C# scripts are a great way to quickly prototype and solve problems without the overhead of creating a full project. I am using `dotnet-script` to run the scripts from the command line.
 
+<sub>See the [Advent of Code website](https://adventofcode.com/2015) for this year's puzzles.</sub>
+
 ## 💻 Setup
 
 1. Install the .NET SDK from [here](https://dotnet.microsoft.com/download).
