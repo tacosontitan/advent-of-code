@@ -1,3 +1,8 @@
+param (
+    [int]$Year,
+    [int]$StartingDay = 1
+)
+
 function CreateIssueForDay {
     param (
         [int]$year,
@@ -56,8 +61,7 @@ Set-Variable NO_PRIORITY_OPTION_ID -Option Constant -Value "887c52fc"
 Set-Variable DIFFICULTY_FIELD_ID -Option Constant -Value "PVTSSF_lAHOA-Zq-s4Anjr1zgsnbxM"
 Set-Variable NO_DIFFICULTY_OPTION_ID -Option Constant -Value "9b183a0b"
 
-$year = 2016
-for ($day = 10; $day -le 25; $day++) {
-    $issueNumber = CreateIssueForDay -year $year -day $day
+for ($day = $StartingDay; $day -le 25; $day++) {
+    $issueNumber = CreateIssueForDay -year $Year -day $day
     UpdateProjectFieldsForNewIssue -issueNumber $issueNumber
 }

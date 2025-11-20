@@ -13,6 +13,20 @@ Get started by reviewing the answers to the following questions:
 - [How do I report security concerns?](./SECURITY.md)
 - [What third-party dependencies are used?](./NOTICES.md)
 
+## 🚀 Annual Setup
+
+Each year, the `resources/Setup.ps1` script is used to create the issues, milestones, and project links for the year's puzzles. To set up a new year, run the script with the desired year as an argument:
+
+```powershell
+.\resources\Setup.ps1 -Year 2024
+```
+
+The script has an optional `-day` parameter to create issues starting from a specified day:
+
+```powershell
+.\resources\Setup.ps1 -Year 2024 -Day 5
+```
+
 ## 🗒️ Breakdown
 
 Each year has its own directory with a README file that outlines the language and tools used, as well as instructions on how to run the solutions.
