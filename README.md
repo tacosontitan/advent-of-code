@@ -34,6 +34,8 @@ Each year has its own directory with a README file that outlines the language an
 |Year|Focus|
 |----|-----|
 |[2015](./puzzles/2015/README.md)|C# Scripts|
+|...|...|...|
+|[2025](./puzzles/2025/README.md)|Kotlin|
 
 ### ✅ Language Plan
 
@@ -50,4 +52,4 @@ The following years are unsolved as of today and will be completed as time permi
 |2022|C++|C++||
 |2023|TypeScript|C#|Chose C# scripts for 2015.|
 |2024|F#|Python||
-|2025|TBD|TBD|Considering Kotlin if the current index holds.|
+|2025|Kotlin|Python||
