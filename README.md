@@ -52,4 +52,3 @@ The following years are unsolved as of today and will be completed as time permi
 |2022|C++|C++||
 |2023|TypeScript|C#|Chose C# scripts for 2015.|
 |2024|F#|Python||
-|2025|Kotlin|Python||
